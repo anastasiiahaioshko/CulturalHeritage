@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage Watch</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syncopate:wght@400;700&family=Syne:wght@400..800&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="navbar">
+      <a href="index.html">home</a>
+      <a href="map.html">map</a>
+    </div>
+    <h1>Filter Cultural Heritage Sites</h1>
+    <form class="type" id="filters">
+        <label for="region">Select Region:</label>
+        <select id="region">
+        <option value="All">All Regions</option>
+        <option value="Chernihiv Region">Chernihiv Region</option>
+        <option value="Kyiv Region">Kyiv Region</option>
+        <option value="Kharkiv Region">Kharkiv Region</option>
+        <option value="Zaporizhzhya Region">Zaporizhzhya Region</option>
+        <option value="Zhytomyr Region">Zhytomyr Region</option>
+        <option value="Donetsk Region">Donetsk Region</option>
+        <option value="Luhansk Region">Luhansk Region</option>
+        <option value="Sumy Region">Sumy Region</option>
+        <option value="Mykolaiv Region">Mykolaiv Region</option>
+        <option value="Vinnytsya Region">Vinnytsya Region</option>
+        <option value="Odesa Region">Odesa Region</option>
+        <option value="Dnipropetrovs’k Region">Dnipropetrovs’k Region</option>
+        <option value="Kherson Region">Kherson Region</option>
+        <option value="L’viv Region">L’viv Region</option>
+
+        </select>
+
+        <label for="type">Select Type:</label>
+        <select id="type">
+        <option value="All">All Types</option>
+        <option value="School">School</option>
+        <option value="Religious site">Religious site</option>
+        <option value="Historic Building">Historic Building</option>
+        <option value="Library">Library</option>
+        <option value="Theater">Theater</option>
+        <option value="Museum">Museum</option>
+                <option value="Monument">Monument</option>
+        <option value="House of Culture">House of Culture</option>
+
+        </select>
+
+        <button class="button" type="button" onclick="fetchData()">Search</button>
+    </form>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
